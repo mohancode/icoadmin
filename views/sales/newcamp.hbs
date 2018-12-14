@@ -1,0 +1,88 @@
+
+<!-- PAGE CONTENT WRAPPER -->
+<div class="page-content-wrap">
+
+
+    <div class="row">
+        <div class="col-md-12">
+
+            <form class="form-horizontal" action="/account/deposite"  name='frmdeposite' method="post">
+
+                <div class="panel panel-default tabs">
+                    <ul class="nav nav-tabs" role="tablist">
+
+                        <li><a href="#tab-deposite" role="tab" data-toggle="tab">Sale Analytical</a></li>
+
+                    </ul>
+                    <div class="panel-body tab-content">
+
+                        <div class="tab-pane active" id="tab-deposite">
+                            <p>Donec tristique eu sem et aliquam. Proin sodales elementum urna et euismod. Quisque nisl nisl, venenatis eget dignissim et, adipiscing eu tellus. Sed nulla massa, luctus id orci sed, elementum consequat est. Proin dictum odio quis diam gravida facilisis. Sed pharetra dolor a tempor tristique. Sed semper sed urna ac dignissim. Aenean fermentum leo at posuere mattis. Etiam vitae quam in magna viverra dictum. Curabitur feugiat ligula in dui luctus, sed aliquet neque posuere.</p>
+
+                            <div class="form-group">
+                                <label class="col-md-2 col-xs-12 control-label">Admin Address</label>
+                                <div class="col-md-6 col-xs-12">
+                                      <input type="text" enable='false' placeholder='token count' enable='false' class="form-control txtadmin" name='txtadmin' value="{{adminAddress}}"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-10">Fund will be reflectected on confirmation of transaction.</div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-2 col-xs-12 control-label">From</label>
+                                <div class="col-md-4 col-xs-12">
+                                    <input type="text" class="form-control txtfrom" placeholder="from address"  name="txtfrom" value=""/>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <button type="button" class="btn-small btn btn-primary" id="btnCheckBalance">CheckBalance</button>
+                                </div>
+                            </div>
+                            <div class="form-group balanceFrames">
+                              <label class="col-md-2 col-xs-12 control-label" >Balance</label>
+                              <div class="col-md-4 col-xs-12">
+
+                                    <label class="control-label" id="lblbalance">getting...</label>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-2 col-xs-12 control-label">Amount</label>
+                                <div class="col-md-6 col-xs-12">
+                                    <input type="text" class="form-control txtamount" placeholder="amount in ether" name="txtamount" max="10"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-2 col-xs-12 control-label">Private Key</label>
+                                <div class="col-md-6 col-xs-12">
+                                    <input type="text" class="form-control txtprivatekey" placeholder="*******"  name="txtprivatekey" value=""/>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-2 col-xs-12 control-label"></label>
+                                <div class="col-md-6 col-xs-12">
+
+                                    <span class="help-block">Read <a href="#">terms</a> Your Private key will not be stored.</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                            <div class="txhashDiv">Getting</div></div>
+
+                        </div>
+
+                    </div>
+                    <div class="panel-footer">
+                        <button type="submit" class="btn btn-primary">Deposite <span class="fa fa-send"></span></button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+
+</div>

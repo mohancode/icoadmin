@@ -1,0 +1,136 @@
+
+
+
+<div class="page-content-wrap">
+
+  <div class="row">
+
+        <div class="col-md-8">
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel-title-box">
+                        <h3>Token Price Setting</h3>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="panel-body">
+                  <form class="form-horizontal" action="/token/settingprice"  name='frmdeposite' method="post">
+                  <p >Donec tristique eu sem et aliquam. Proin sodales elementum urna et euismod. Quisque nisl nisl, venenatis eget dignissim et, adipiscing eu tellus. Sed nulla massa, luctus id orci sed, elementum consequat est. Proin dictum odio quis diam gravida facilisis. Sed pharetra dolor a tempor tristique. Sed semper sed urna ac dignissim. Aenean fermentum leo at posuere mattis. Etiam vitae quam in magna viverra dictum. Curabitur feugiat ligula in dui luctus, sed aliquet neque posuere.</p>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="col-md-4 col-xs-12 control-label">Token Name</label>
+                        <div class="col-md-8 col-xs-12">
+                            <select name="selToken" id="selToken" class="form-control">
+                              <option value=''>--Select Token Name---</option>
+                              <option value='ATT'>ATT</option>
+
+                            </select>
+                          </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+
+                      </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="col-md-4 col-xs-12 control-label">Current Price</label>
+                        <div class="col-md-8 col-xs-12">
+                            <input type="text" enable='false' placeholder='token count' enable='false' class="form-control" id="txtcurrentprice" name='txtcurrentprice' value=""/>
+                          </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+
+                      </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                          <label class="col-md-4 control-label">New Price</label>
+                          <div class="col-md-8">
+                              <div class="input-group" >
+                                  <input type="text" enable='false' placeholder='token count' enable='false' class="form-control txtname" name='txtnewprice' value=""/>
+                              </div>
+                          </div>
+                      </div>
+                     </div>
+                     <div class="col-md-6">
+
+                  </div>
+                </div>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-6">
+
+                     </div>
+                    <div class="col-md-6">
+
+                     </div>
+
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+
+                          <div class="col-md-8">
+                              <div class="input-group" >
+                                  <button class="btn btn-primary">Save</button>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                </form>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-md-4">
+
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <div class="panel-title-box">
+                      <h3>Token</h3>
+                      <span>total sale (last month)</span>
+                  </div>
+                  <ul class="panel-controls" style="margin-top: 2px;">
+                      <li><a href="#" class="panel-fullscreen"><span class="fa fa-expand"></span></a></li>
+
+                  </ul>
+              </div>
+              <div class="panel-body padding-0">
+                  <div class="chart-holder" id="dashboard-donut-1" style="height: 300px;"></div>
+              </div>
+          </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+<div class="chart-holder" id="dashboard-area-1" style="height: 200px;"></div>
+<div class="block-full-width">
+
+    </div>
+
+
+</div>

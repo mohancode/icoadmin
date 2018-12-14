@@ -1,0 +1,341 @@
+
+
+
+<!-- PAGE CONTENT WRAPPER -->
+<div class="page-content-wrap">
+
+    <!-- START WIDGETS -->
+    <div class="row">
+        <div class="col-md-3">
+
+            <!-- START WIDGET SLIDER -->
+            <div class="widget widget-default widget-carousel">
+                <div class="owl-carousel" id="owl-example">
+                    <div>
+                        <div class="widget-title">Total Visitors</div>
+                        <div class="widget-subtitle">27/08/2014 15:23</div>
+                        <div class="widget-int">3,548</div>
+                    </div>
+                    <div>
+                        <div class="widget-title">Registered</div>
+                        <div class="widget-subtitle">Visitors</div>
+                        <div class="widget-int">1,695</div>
+                    </div>
+                    <div>
+                        <div class="widget-title">New</div>
+                        <div class="widget-subtitle">Visitors</div>
+                        <div class="widget-int">1,977</div>
+                    </div>
+                </div>
+                <div class="widget-controls">
+                    <a href="#" class="widget-control-right widget-remove" data-toggle="tooltip" data-placement="top" title="Remove Widget"><span class="fa fa-times"></span></a>
+                </div>
+            </div>
+            <!-- END WIDGET SLIDER -->
+
+        </div>
+        <div class="col-md-3">
+
+            <!-- START WIDGET MESSAGES -->
+            <div class="widget widget-default widget-item-icon" onclick="location.href='pages-messages.html';">
+                <div class="widget-item-left">
+                    <image src='images/btc.png' width="50" height="50"></image>
+                </div>
+                <div class="widget-data">
+                    <div class="widget-int num-count">48</div>
+                    <div class="widget-title">BTC</div>
+                    <div class="widget-subtitle">bitcoin wallet balance</div>
+                </div>
+                <div class="widget-controls">
+                    <a href="#" class="widget-control-right widget-remove" data-toggle="tooltip" data-placement="top" title="Remove Widget"><span class="fa fa-times"></span></a>
+                </div>
+            </div>
+            <!-- END WIDGET MESSAGES -->
+
+        </div>
+        <div class="col-md-3">
+
+            <!-- START WIDGET REGISTRED -->
+            <div class="widget widget-default widget-item-icon" onclick="location.href='pages-address-book.html';">
+                <div class="widget-item-left">
+                    <image src='images/eth.png' width="50" height="50"></image>
+                </div>
+                <div class="widget-data">
+                    <div class="widget-int num-count">{{balance}}</div>
+                    <div class="widget-title">ETH</div>
+                    <div class="widget-subtitle">ethereum wallet balance</div>
+                </div>
+                <div class="widget-controls">
+                    <a href="#" class="widget-control-right widget-remove" data-toggle="tooltip" data-placement="top" title="Remove Widget"><span class="fa fa-times"></span></a>
+                </div>
+            </div>
+            <!-- END WIDGET REGISTRED -->
+
+        </div>
+        <div class="col-md-3">
+
+            <!-- START WIDGET CLOCK -->
+            <div class="widget widget-info widget-padding-sm">
+                <div class="widget-big-int plugin-clock">00:00</div>
+                <div class="widget-subtitle plugin-date">Loading...</div>
+                <div class="widget-controls">
+                    <a href="#" class="widget-control-right widget-remove" data-toggle="tooltip" data-placement="left" title="Remove Widget"><span class="fa fa-times"></span></a>
+                </div>
+                <div class="widget-buttons widget-c3">
+                    <div class="col">
+                        <a href="#"><span class="fa fa-clock-o"></span></a>
+                    </div>
+                    <div class="col">
+                        <a href="#"><span class="fa fa-bell"></span></a>
+                    </div>
+                    <div class="col">
+                        <a href="#"><span class="fa fa-calendar"></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- END WIDGET CLOCK -->
+
+        </div>
+    </div>
+    <div class="page-content-wrap">
+
+
+
+
+
+    <div class="row">
+
+        <div class="col-md-8">
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel-title-box">
+                        <h3>Campaign Creation</h3>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="panel-body">
+                  <form class="form-horizontal" action="/account/deposite"  name='frmdeposite' method="post">
+                  <p >Donec tristique eu sem et aliquam. Proin sodales elementum urna et euismod. Quisque nisl nisl, venenatis eget dignissim et, adipiscing eu tellus. Sed nulla massa, luctus id orci sed, elementum consequat est. Proin dictum odio quis diam gravida facilisis. Sed pharetra dolor a tempor tristique. Sed semper sed urna ac dignissim. Aenean fermentum leo at posuere mattis. Etiam vitae quam in magna viverra dictum. Curabitur feugiat ligula in dui luctus, sed aliquet neque posuere.</p>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="col-md-4 col-xs-12 control-label">Name</label>
+                        <div class="col-md-8 col-xs-12">
+                            <input type="text" enable='false' placeholder='token count' enable='false' class="form-control txtname" name='txtname' value="{{adminAddress}}"/>
+                          </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                       <div class="form-group">
+                         <label class="col-md-4 col-xs-12 control-label">Event Type</label>
+                         <div class="col-md-8 col-xs-12">
+                             <select name="txteventtype" class="form-control">
+                               <option value=''>--Select Event Type---</option>
+                               <option value='email'>Email</option>
+                               <option value='campaign'>Campaign</option>
+                               <option value='meetup'>Meetup</option>
+                             </select>
+                           </div>
+                         </div>
+                      </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="col-md-4 col-xs-12 control-label">Conducted By</label>
+                        <div class="col-md-8 col-xs-12">
+                            <input type="text" enable='false' placeholder='token count' enable='false' class="form-control txtname" name='txtconductedby' value="{{adminAddress}}"/>
+                          </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                       <div class="form-group">
+                           <label class="col-md-4 control-label">Event Date</label>
+                           <div class="col-md-8">
+                               <div class="input-group" >
+                                   <input type="text" class="form-control" name="txteventdate" value="22-11-2018" id="dp-4" data-date="22-11-2018" data-date-format="dd-mm-yyyy" data-date-viewmode="months"/>
+                                   <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
+                               </div>
+                           </div>
+                       </div>
+                      </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                          <label class="col-md-4 control-label">Affected From</label>
+                          <div class="col-md-8">
+                              <div class="input-group" >
+                                  <input type="text" class="form-control" name="txtfrom" value="22-11-2018" id="dp-4" data-date="22-11-2018" data-date-format="dd-mm-yyyy" data-date-viewmode="months"/>
+                                  <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
+                              </div>
+                          </div>
+                      </div>
+                     </div>
+                     <div class="col-md-6">
+                       <div class="form-group">
+                           <label class="col-md-4 control-label">Affected To</label>
+                           <div class="col-md-8">
+                               <div class="input-group" >
+                                   <input type="text" class="form-control" name="txtto" value="22-11-2018" id="dp-4" data-date="22-11-2018" data-date-format="dd-mm-yyyy" data-date-viewmode="months"/>
+                                   <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
+                               </div>
+                           </div>
+                       </div>
+                  </div>
+                </div>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                          <label class="col-md-4 control-label">Time Scheduled</label>
+                          <div class="col-md-8">
+                              <div class="input-group bootstrap-timepicker">
+                                  <input type="text" class="form-control timepicker24" name="txteventtime"/>
+                                  <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+                              </div>
+                          </div>
+                      </div>
+                     </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="col-md-4 col-xs-12 control-label">Location</label>
+                        <div class="col-md-8 col-xs-12">
+                            <input type="text" enable='false' placeholder='token count' enable='false' class="form-control txtadmin" name='txtlocation' value="{{adminAddress}}"/>
+                          </div>
+                        </div>
+                     </div>
+
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                          
+                          <div class="col-md-8">
+                              <div class="input-group" >
+                                  <button class="btn btn-primary">Create</button>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                </form>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-md-4">
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title-box">
+                                <h3>Campaign</h3>
+                                <span></span>
+                            </div>
+                            <ul class="panel-controls" style="margin-top: 2px;">
+                                <li><a href="#" class="panel-fullscreen"><span class="fa fa-expand"></span></a></li>
+                                <li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-cog"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span> Collapse</a></li>
+                                        <li><a href="#" class="panel-remove"><span class="fa fa-times"></span> Remove</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="panel-body panel-body-table">
+
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th width="50%">Campaign</th>
+                                            <th width="20%">Status</th>
+                                            <th width="30%">Activity</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Email</strong></td>
+                                            <td><span class="label label-danger">Processing</span></td>
+                                            <td>
+                                                <div class="progress progress-small progress-striped active">
+                                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">85%</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Dubai-Meet</strong></td>
+                                            <td><span class="label label-warning">Live</span></td>
+                                            <td>
+                                                <div class="progress progress-small progress-striped active">
+                                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">40%</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Singapore-Oct</strong></td>
+                                            <td><span class="label label-warning">Live</span></td>
+                                            <td>
+                                                <div class="progress progress-small progress-striped active">
+                                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 72%;">72%</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Singapore-May</strong></td>
+                                            <td><span class="label label-success">Completed</span></td>
+                                            <td>
+                                                <div class="progress progress-small progress-striped active">
+                                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">100%</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Dubai-May</strong></td>
+                                            <td><span class="label label-success">Completed</span></td>
+                                            <td>
+                                                <div class="progress progress-small progress-striped active">
+                                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">100%</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+    </div>
+
+
+
+
+<div class="chart-holder" id="dashboard-area-1" style="height: 200px;"></div>
+<div class="block-full-width">
+
+    </div>
+
+
+</div>
+</div>
+<!-- END WIDGETS -->

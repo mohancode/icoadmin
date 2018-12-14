@@ -1,0 +1,234 @@
+
+<!-- PAGE CONTENT WRAPPER -->
+<div class="page-content-wrap">
+
+    <div class="row">
+        <div class="col-md-12">
+
+            <form class="form-horizontal" action="/account/transfer" method="post">
+
+                <div class="panel panel-default tabs">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="active"><a href="#tab-first" role="tab" data-toggle="tab">Transfer</a></li>
+
+                    </ul>
+                    <div class="panel-body tab-content">
+                        <div class="tab-pane active" id="tab-first">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum dolor sem, quis pharetra dui ultricies vel. Cras non pulvinar tellus, vel bibendum magna. Morbi tellus nulla, cursus non nisi sed, porttitor dignissim erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis commodo lectus. Vivamus vel tincidunt enim, non vulputate ipsum. Ut pellentesque consectetur arcu sit amet scelerisque. Fusce commodo leo eros, ut eleifend massa congue at.</p>
+                            <div class="form-group">
+                                <label class="col-md-3 col-xs-12 control-label">Crypto</label>
+                              <div class="col-md-6 col-xs-12">
+                                    <select class="form-control select selectCrypto" id='selectCrypto' name='cryptoType' data-style="btn-success">
+                                       <option value='def'>-- Select Crypto --</option>
+                                        <option value='eth'>Ethereum (eth)</option>
+                                        <option value='att'>AlwinToken (att)</option>
+                                      </select>
+                                </div>
+                            </div>
+                            <div id="transferDiv">
+                            <div class="form-group fromText">
+                                <label class="col-md-3 col-xs-12 control-label">From</label>
+                                <div class="col-md-3 col-xs-12">
+                                    <input type="text" class="form-control" id="address" name='address' value="finding..."/>
+                                </div>
+                                <div class="col-md-3 col-xs-12">
+                                    <input type="text" class="form-control" placeholder='Private Key Here *(which will not stored)' name='privatekey' />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-3 col-xs-12 control-label">To</label>
+                                <div class="col-md-6 col-xs-12">
+                                    <input type="text" placeholder='to address here' class="form-control" name='address' value=""/>
+                                </div>
+                            </div>
+                          <div class="form-group">
+                              <div class='inusdDiv'>
+                                <label class="col-md-3 col-xs-12 control-label">Amount</label>
+                                <div class="col-md-2">
+                                      <input type="text" placeholder='amount in crypto' class="form-control" name='amount' value=""/>
+                                </div>
+
+                                <div class="col-md-2">
+                                      <input type="text" placeholder='in usd' class="form-control" name='inusd' value=""/>
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="control-label">in USD</label>
+                                </div>
+                              </div>
+
+                              <div class='forTokenDiv'>
+                                <label class="col-md-3 col-xs-12 control-label">Token</label>
+                                <div class="col-md-2">
+                                      <input type="text" placeholder='token count' class="form-control" name='token' value=""/>
+                                </div>
+
+                              </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-3 col-xs-12 control-label">About</label>
+                                <div class="col-md-6 col-xs-12">
+                                    <textarea class="form-control" rows="3" placeholder='Purpose of the Transaction'></textarea>
+                                    <span class="help-block">For Your Rememberance</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-3 col-xs-12 control-label">Note</label>
+                                <div class="col-md-6 col-xs-12 notification">
+
+                                    <span class="help-block">Confirmation Email to Your Register Mail , <b>Important : </b>Confirm in your email to complete this transaction.</span>
+                                </div>
+                            </div>
+
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="panel-footer">
+                        <button type="submit" class="btn btn-primary ">Transfer <span class="fa fa-send"></span></button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+
+            <form class="form-horizontal" action="/account/deposite"  name='frmdeposite' method="post">
+
+                <div class="panel panel-default tabs">
+                    <ul class="nav nav-tabs" role="tablist">
+
+                        <li><a href="#tab-deposite" role="tab" data-toggle="tab">Deposite</a></li>
+
+                    </ul>
+                    <div class="panel-body tab-content">
+
+                        <div class="tab-pane active" id="tab-deposite">
+                            <p>Donec tristique eu sem et aliquam. Proin sodales elementum urna et euismod. Quisque nisl nisl, venenatis eget dignissim et, adipiscing eu tellus. Sed nulla massa, luctus id orci sed, elementum consequat est. Proin dictum odio quis diam gravida facilisis. Sed pharetra dolor a tempor tristique. Sed semper sed urna ac dignissim. Aenean fermentum leo at posuere mattis. Etiam vitae quam in magna viverra dictum. Curabitur feugiat ligula in dui luctus, sed aliquet neque posuere.</p>
+
+                            <div class="form-group">
+                                <label class="col-md-2 col-xs-12 control-label">Admin Address</label>
+                                <div class="col-md-6 col-xs-12">
+                                      <input type="text" enable='false' placeholder='token count' enable='false' class="form-control txtadmin" name='txtadmin' value="{{adminAddress}}"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-10">Fund will be reflectected on confirmation of transaction.</div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-2 col-xs-12 control-label">From</label>
+                                <div class="col-md-4 col-xs-12">
+                                    <input type="text" class="form-control txtfrom" placeholder="from address"  name="txtfrom" value=""/>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <button type="button" class="btn-small btn btn-primary" id="btnCheckBalance">CheckBalance</button>
+                                </div>
+                            </div>
+                            <div class="form-group balanceFrames">
+                              <label class="col-md-2 col-xs-12 control-label" >Balance</label>
+                              <div class="col-md-4 col-xs-12">
+
+                                    <label class="control-label" id="lblbalance">getting...</label>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-2 col-xs-12 control-label">Amount</label>
+                                <div class="col-md-6 col-xs-12">
+                                    <input type="text" class="form-control txtamount" placeholder="amount in ether" name="txtamount" max="10"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-2 col-xs-12 control-label">Private Key</label>
+                                <div class="col-md-6 col-xs-12">
+                                    <input type="text" class="form-control txtprivatekey" placeholder="*******"  name="txtprivatekey" value=""/>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-2 col-xs-12 control-label"></label>
+                                <div class="col-md-6 col-xs-12">
+
+                                    <span class="help-block">Read <a href="#">terms</a> Your Private key will not be stored.</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                            <div class="txhashDiv">Getting</div></div>
+
+                        </div>
+
+                    </div>
+                    <div class="panel-footer">
+                        <button type="submit" class="btn btn-primary">Deposite <span class="fa fa-send"></span></button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+
+            <form class="form-horizontal" action="/account/withdraw" method="post">
+
+                <div class="panel panel-default tabs">
+                    <ul class="nav nav-tabs" role="tablist">
+
+                        <li><a href="#tab-withdraw" role="tab" data-toggle="tab">Withdraw</a></li>
+                    </ul>
+                    <div class="panel-body tab-content">
+
+
+                        <div class="tab-pane active" id="tab-withdraw">
+                            <p>This is non libero bibendum, scelerisque arcu id, placerat nunc. Integer ullamcorper rutrum dui eget porta. Fusce enim dui, pulvinar a augue nec, dapibus hendrerit mauris. Praesent efficitur, elit non convallis faucibus, enim sapien suscipit mi, sit amet fringilla felis arcu id sem. Phasellus semper felis in odio convallis, et venenatis nisl posuere. Morbi non aliquet magna, a consectetur risus. Vivamus quis tellus eros. Nulla sagittis nisi sit amet orci consectetur laoreet.</p>
+
+                            <div class="form-group">
+                                <label class="col-md-3 col-xs-12 control-label">E-mail</label>
+                                <div class="col-md-6 col-xs-12">
+                                    <input type="text" class="form-control" value="johndoe@domain.com"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-3 col-xs-12 control-label">Password</label>
+                                <div class="col-md-6 col-xs-12">
+                                    <input type="password" class="form-control" value="password"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-3 col-xs-12 control-label">POP3</label>
+                                <div class="col-md-6 col-xs-12">
+                                    <input type="text" class="form-control" value="pop3.domain.com"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group push-up-30">
+                                <label class="col-md-3 col-xs-12 control-label">Copy to</label>
+                                <div class="col-md-6 col-xs-12">
+                                    <input type="text" class="form-control" value="doejohn@domain.com"/>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <button type="submit" class="btn btn-primary ">Withdraw <span class="fa fa-send"></span></button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+</div>
